@@ -1,20 +1,22 @@
 [gd_scene load_steps=4 format=3 uid="uid://dfxj1x4i0uk25"]
 
-[ext_resource type="Texture2D" uid="uid://bm1s1345nrp3m" path="res://images/person.png" id="1_10wvh"]
 [ext_resource type="Script" path="res://player.gd" id="1_fnmli"]
+[ext_resource type="Texture2D" uid="uid://bfpxx13c73t8y" path="res://brackeys_platformer_assets/sprites/knight — копия.png" id="2_qxh4g"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k4cnk"]
-radius = 26.0
-height = 52.0
+radius = 16.0
+height = 32.0
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(44, 89)
 script = ExtResource("1_fnmli")
 
 [node name="player" type="Sprite2D" parent="."]
-scale = Vector2(0.0610119, 0.0578964)
-texture = ExtResource("1_10wvh")
+position = Vector2(8.9907, -5.5)
+scale = Vector2(1.64761, 1.44118)
+texture = ExtResource("2_qxh4g")
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(12, -5)
 shape = SubResource("CapsuleShape2D_k4cnk")
