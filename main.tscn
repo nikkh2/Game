@@ -1,14 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://b7lvvbt67kbmf"]
+[gd_scene load_steps=4 format=3 uid="uid://b7lvvbt67kbmf"]
 
 [ext_resource type="PackedScene" uid="uid://dfxj1x4i0uk25" path="res://player.tscn" id="1_5t8ys"]
 [ext_resource type="PackedScene" uid="uid://d2kuk32l3m0hg" path="res://platform.tscn" id="2_n0051"]
+[ext_resource type="Texture2D" uid="uid://6msp1frh2m04" path="res://SlimeOrange/SlimeOrange_00000.png" id="3_cjt1r"]
 
 [node name="Main" type="Node2D"]
 position = Vector2(0, 17)
 
 [node name="Player" parent="." instance=ExtResource("1_5t8ys")]
-visible = false
-position = Vector2(34, 100)
+position = Vector2(38, 106)
 floor_max_angle = 0.753982
 
 [node name="Platform" parent="." instance=ExtResource("2_n0051")]
@@ -28,3 +28,8 @@ position = Vector2(126, 154)
 
 [node name="Platform6" parent="." instance=ExtResource("2_n0051")]
 position = Vector2(211, 154)
+
+[node name="SlimeOrange00000" type="Sprite2D" parent="."]
+position = Vector2(330, 101)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_cjt1r")
