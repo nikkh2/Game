@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://blf5w855f1eyl"]
+
+[ext_resource type="Texture2D" uid="uid://bjekxf3qjk2y3" path="res://BlueWizard/2BlueWizardIdle/Chara - BlueIdle00006.png" id="1_stpav"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Chara-BlueIdle00006" type="Sprite2D" parent="."]
+position = Vector2(-13, -86)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_stpav")
+centered = false
+offset = Vector2(1, 1)
+
+[node name="SlimeBasic00000" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(393, 17)

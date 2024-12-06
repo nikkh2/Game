@@ -4,9 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://d2kuk32l3m0hg" path="res://platform.tscn" id="2_n0051"]
 
 [node name="Main" type="Node2D"]
+position = Vector2(0, 17)
 
 [node name="Player" parent="." instance=ExtResource("1_5t8ys")]
-position = Vector2(44, 100)
+visible = false
+position = Vector2(34, 100)
+floor_max_angle = 0.753982
 
 [node name="Platform" parent="." instance=ExtResource("2_n0051")]
 position = Vector2(43, 154)
@@ -22,3 +25,6 @@ position = Vector2(567, 155)
 
 [node name="Platform2" parent="." instance=ExtResource("2_n0051")]
 position = Vector2(126, 154)
+
+[node name="Platform6" parent="." instance=ExtResource("2_n0051")]
+position = Vector2(211, 154)
